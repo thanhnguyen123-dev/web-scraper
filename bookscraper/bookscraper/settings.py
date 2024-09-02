@@ -13,7 +13,8 @@ SPIDER_MODULES = ["bookscraper.spiders"]
 NEWSPIDER_MODULE = "bookscraper.spiders"
 
 ITEM_PIPELINES = {
-   'bookscraper.pipelines.BookscraperPipeline': 300,
+  'bookscraper.pipelines.BookscraperPipeline': 200,
+   'bookscraper.pipelines.SaveToMySQLPipeline': 300,
 }
 
 
